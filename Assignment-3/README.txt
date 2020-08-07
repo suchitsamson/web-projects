@@ -1,0 +1,5 @@
+- Build an android app to display weather details of user favourite cities.
+- User can add/delete their favourite city as per their choice.
+- App has three fragments to display data in various formats namely grid, linechart, recycler view.
+- Display city pictures using glide library
+- Used twitter api to share weather details.
