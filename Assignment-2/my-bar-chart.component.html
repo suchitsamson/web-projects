@@ -1,0 +1,23 @@
+<div class="col-sm-12">
+    <div class="col-sm-6">
+        {{message}}
+        <select #options="ngModel" (change)="optionChange()" class="custom-select col-md-5" name="options" [(ngModel)]="chartAttribute">
+                 <option value="T" selected>Temperature</option>
+                 <option value="P">Pressure</option>
+                 <option value="H">Humidity</option>
+                 <option value="O">Ozone</option>
+                 <option value="V">Visibility</option>
+                 <option value="W">Wind Speed</option>
+        </select>
+    </div>
+    <div style="display: block">
+        <canvas baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [chartType]="barChartType">
+        </canvas>
+    </div>
+</div>
+

@@ -1,0 +1,69 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <div class="card" style="background-color:#a5d0ee; border-radius: 5px; border-style: solid; border-color: #485b68;">
+      <div class="card-body">
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td colspan="6">
+                <h3 class="card-title cardTitle">{{city}}</h3>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td rowspan="3" colspan="2"><img [attr.src]="seal" class="rounded mx-auto d-block SealSize" width="130">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <h4 class="card-subtitle mb-2 text-muted cardTitle" style="color:#364e4f">{{timezone}}</h4>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="6">
+                <h3 class="card-title cardTitle">{{temperature}}<img
+                    src="https://cdn3.iconfinder.com/data/icons/virtual-notebook/16/button_shape_oval-512.png"
+                    style="vertical-align: top;" height="5" width="5">F</h3>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="6">
+                <h5 class="card-title cardTitle">{{summary}}</h5>
+              </td>
+            </tr>
+            <tr>
+              <td class="card-text imageSize" style="text-align: center" [class.d-none]="!displayhumidity"><img
+                  src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-16-512.png" height="30" width="30"
+                  ngbTooltip="Humidity"></td>
+              <td class="card-text imageSize" style="text-align: center" [class.d-none]="!displaypressure"><img
+                  src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-25-512.png" height="30" width="30"
+                  ngbTooltip="Pressure"></td>
+              <td class="card-text imageSize" style="text-align: center" [class.d-none]="!displaywindspeed"><img
+                  src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-27-512.png" height="30" width="30"
+                  ngbTooltip="WindSpeed"></td>
+              <td class="card-text imageSize" style="text-align: center" [class.d-none]="!displayvisibility"><img
+                  src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-30-512.png" height="30" width="30"
+                  ngbTooltip="Visibility"></td>
+              <td class="card-text imageSize" style="text-align: center" [class.d-none]="!displaycloudcover"><img
+                  src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-28-512.png" height="30" width="30"
+                  ngbTooltip="CloudCover"></td>
+              <td class="card-text imageSize" style="text-align: center" [class.d-none]="!displayozone"><img
+                  src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-24-512.png" height="30" width="30"
+                  ngbTooltip="Ozone"></td>
+            </tr>
+            <tr>
+              <td class="card-text" style="text-align: center" [class.d-none]="!displayhumidity">{{humidity}}</td>
+              <td class="card-text" style="text-align: center" [class.d-none]="!displaypressure">{{pressure}}</td>
+              <td class="card-text" style="text-align: center" [class.d-none]="!displaywindspeed">{{windspeed}}</td>
+              <td class="card-text" style="text-align: center" [class.d-none]="!displayvisibility">{{visibility}}</td>
+              <td class="card-text" style="text-align: center" [class.d-none]="!displaycloudcover">{{cloudcover}}</td>
+              <td class="card-text" style="text-align: center" [class.d-none]="!displayozone">{{ozone}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2"></div>
+</div>

@@ -1,0 +1,44 @@
+.element tr:nth-child(even){
+    background-color: #6e91aa;
+  }
+  .element tr:nth-child(odd){
+    background-color: #a5d0ee;
+  }
+  .element th{
+    background-color: #6e91aa;
+  }
+  .linkFav {
+    color: blue;
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 400px) {
+
+  .searchAndClear {
+        width: 100px;
+     }
+
+  .searchAndClear {
+      width: 100px;
+    }
+
+  .textSize{
+      width: 40px;
+    }
+
+  h3{
+      font-size:15px;
+    }
+    
+  h4{
+      font-size:13px;
+  }
+
+  h5{
+      font-size:10px;
+  }
+  
+  .SealSize {
+      width: 80px;
+  }
+}
